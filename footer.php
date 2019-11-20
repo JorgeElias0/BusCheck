@@ -12,7 +12,7 @@
                     <div class="seccfoot">
                         <label>Puedes contactarnos en:</label>
                         <ul>
-                            <li>Nuestro correo electronico: <a href="#"><i class="fas fa-envelope"></i> TIAM@gmail.com</a></li>
+                            <li>Nuestro correo electronico: <a href="#"><i class="fas fa-envelope"></i> TAIM@gmail.com</a></li>
                             <li>Nuestro numero telefonico: <a href="#"><i class="fas fa-mobile-alt"></i> 444-128-9736</a></li>
                             <li>Nuestra pagina de Facebook: <a href="#"><i class="fab fa-facebook-f"></i> TIAM SLP</a></li>
                         </ul>
