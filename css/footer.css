@@ -1,0 +1,72 @@
+footer{
+    background-color: rgb(30, 103, 180);
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    width: 100%;
+    margin-top: 5px;
+}
+
+main{
+    margin-bottom: 10px;
+}
+
+footer p{
+    text-align: center;
+}
+
+.seccfoot
+{
+    width: 40%;
+    margin: 0 10px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.seccfoot label{
+    margin-top: 10px;
+}
+
+.seccfoot ul
+{
+    list-style: none;
+    padding: 0 0 0 10px;
+}
+
+.seccfoot a
+{
+    text-decoration: none;
+    color: white;
+    padding-left: 8px;
+}
+
+.seccfoot a:hover
+{
+    color: rgb(255, 255, 6);
+    border-left: yellow 1px solid;
+    border-bottom: 0px;
+    transition: all 0.5s;
+}
+
+.informacion
+{
+    padding: 50px 40px;
+    margin: auto;
+    margin: auto;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+    align-self: flex-end;
+}
+
+footer a:hover
+{
+    color: rgb(255, 255, 6);
+    border-bottom: yellow 1px solid;
+    transition: all 0.5s;
+}

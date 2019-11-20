@@ -1,0 +1,91 @@
+body{
+    background-color: rgb(33, 112, 204);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Courier New', Courier, monospace;
+    margin: auto;
+}
+
+.seccion{
+    flex-flow: column;
+    display: flex;
+    align-items: center;
+    width: 50%;
+    color: white;
+}
+
+h2, h3, label{
+    text-align: center;
+    margin-bottom: 5px;
+    margin-top: 20px;
+}
+
+.accesos
+{
+    width: 80%;
+    height: 50px;
+    text-transform: uppercase;
+    border: 1px solid white;
+    color: rgb(33, 112, 204);
+    margin: 7px 0;
+    background-color: white;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.logo{
+    height: 30%;
+}
+
+.accesos:hover
+{
+    background-color: rgb(33, 112, 204);
+    color: white;
+    transition: all 0.5s;
+}
+
+.dat
+{
+    margin: 10px 0;
+}
+
+.marco
+{
+    width: 80%;
+    height: 15%;
+    border: 10px solid rgb(251, 255, 0);
+    margin-bottom: 10px;
+}
+
+@media(max-width: 799px)
+{
+    .marco{
+        height: 20%;
+    }
+
+    .dat{
+        width: 200px;
+    }
+
+    .accesos
+    {
+        width: 300px;
+    }
+
+    .logo{
+        height: 130px;
+        margin-top: 10px;
+    }
+}
+
+@media(min-width: 800px)
+{
+    .accesos
+    {
+        width: 71%;
+    }
+}
