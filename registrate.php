@@ -10,11 +10,17 @@
     <body>
         <div class="seccion">
             <img src="/imagenes/newlogo.png" alt="logo empresa" class="logo">
-            <h2>¡Inicia Sesion en tu cuenta!</h2>
+            <h2>¡Únete a nosotros!</h2>
             <label >Usuario</label>
             <input type="text" class="dat"> 
             <label>Contraseña</label>
             <input type="password" class="dat">
+            <label>Confirma Contraseña</label>
+            <input type="password" class="dat">
+            <label>Correo electronico</label>
+            <input type="email" class="dat">
+            <label>Confirma tu Correo Electronico</label>
+            <input type="email" class="dat">
             <a href="./mapa.php" class="accesos">Acceder</a>
         </div>
 
