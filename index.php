@@ -10,7 +10,7 @@
     <body>
         <div class="seccion">
             <img src="imagenes/newlogo.png" alt="logo empresa" class="logo">
-            <a href="html/logeo.php" class="accesos">Accede A Tu Cuenta</a>
+            <a href="./logeo.php" class="accesos">Accede A Tu Cuenta</a>
             <a href="html/Registrate.html" class="accesos">Crea Tu Cuenta</a>
             <a href="#" class="accesos">Acerca de Nosotros</a>
         </div>
