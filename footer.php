@@ -1,7 +1,7 @@
 <footer>
                 <div class="informacion">
                     <div class="seccfoot">
-                        <img src="/imagenes/taimlogo.png" alt="logo empresa" class="logo">
+                        <img src="./imagenes/taimlogo.png" alt="logo empresa" class="logo">
                         <p>
                             <i>
                                 En TAIM nos vamos a asegurar que usted 
