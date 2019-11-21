@@ -18,7 +18,7 @@
     <div class="seccion">
         <div class="dropdown">
             <button class="dropbtn">Rutas Disponibles</button>
-            <div class="dropdown-content">
+            <div class="dropdown-content" style="display:block">
                 <a href="#">Ruta 27</a>
                 <a href="#">Ruta 9</a>
             </div>
