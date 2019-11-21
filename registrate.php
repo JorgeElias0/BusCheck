@@ -8,21 +8,21 @@
         <meta name="viewport" content="width=device-width">
     </head>
     <body>
-        <div class="seccion">
+        <form action="./mapa.php" method="post" class="seccion">
             <img src="./imagenes/newlogo.png" alt="logo empresa" class="logo">
             <h2>¡Únete a nosotros!</h2>
             <label >Usuario</label>
-            <input type="text" class="dat"> 
+            <input type="text" class="dat" required name="usuario"> 
             <label>Contraseña</label>
-            <input type="password" class="dat">
+            <input type="password" class="dat" required name="contraseña">
             <label>Confirma Contraseña</label>
-            <input type="password" class="dat">
+            <input type="password" class="dat" required name="contraseña2">
             <label>Correo electronico</label>
-            <input type="email" class="dat">
+            <input type="email" class="dat" required name="correo">
             <label>Confirma tu Correo Electronico</label>
-            <input type="email" class="dat">
-            <a href="./mapa.php" class="accesos">Acceder</a>
-        </div>
+            <input type="email" class="dat" required name="correo2">
+            <input type="submit" value="Acceder" class="accesos">
+        </form>
 
 <?php
     include('footer.php');

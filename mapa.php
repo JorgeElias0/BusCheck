@@ -1,3 +1,11 @@
+<?php
+	if ($_SERVER["REQUEST_METHOD"] == "POST") {
+		if ($_POST['usuario'] != '') {
+			echo 'Hola ' . $_POST['usuario'];
+		}
+	}
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 
