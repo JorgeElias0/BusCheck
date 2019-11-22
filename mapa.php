@@ -48,6 +48,7 @@
     </div>
             <div id="contenedor">
                 <h2>Chat</h2>
+                <h3 style="text-align: center" id="ruta">Ruta - 27</h3>
                 <div id="caja-chat">
                     <table>
                         <tbody id="chat-msg">
@@ -68,6 +69,18 @@
         var tabla = document.querySelector('#chat-msg');
         var divusuario = document.querySelector('#usuario').innerHTML;
         var usuario = divusuario.trim();
+        var salachat = document.querySelector('#ruta');
+
+        function ActualizaChat9()
+        {
+            salachat.innerHTML = 'Ruta - 9';
+            tabla.innerHTML = '';
+        }
+        function ActualizaChat27()
+        {
+            salachat.innerHTML = 'Ruta - 27';
+            tabla.innerHTML = '';
+        }
 
         function AgregaMensaje()
         {
@@ -75,6 +88,9 @@
             if(d.getHours() < 10)
             {
                 var horas = '0' + d.getHours();
+            }
+            else{
+                var horas = d.getHours();
             }
             var hora = horas + ':' + d.getMinutes();
             if(d.getHours() < 12)
