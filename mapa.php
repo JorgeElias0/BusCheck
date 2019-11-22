@@ -3,19 +3,22 @@
 		if ($_POST['usuario'] != '') {
 			$usuario = $_POST['usuario'];
 		}
-	}
+    }
 ?>
 
 <!DOCTYPE html>
 <html lang="es">
 
 <head>
-<title>BusCheck</title>
-<link href="./css/footer.css" rel=stylesheet>
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-<link href="./css/estiloc.css" rel=stylesheet>
-<meta name="viewport" content="width=device-width">
+    <title>BusCheck</title>
+    <link href="./css/footer.css" rel=stylesheet>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link href="./css/estiloc.css" rel=stylesheet>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="./css/estilos.css">
+    <link href="https://fonts.googleapis.com/css?family=Mukta+Vaani" rel="stylesheet">
 
+    
 </head>
 
 <body>
@@ -23,6 +26,12 @@
     <img src="./imagenes/newlogo.png" alt="logo empresa" class="logo">
 </nav>
 <main>
+    <div style="display:none" id="usuario">
+        <?php
+            echo $usuario;
+        ?>
+    </div>
+
     <div class="seccion">
         <div class="dropdown">
             <button class="dropbtn">Rutas Disponibles</button>
@@ -37,7 +46,49 @@
                 height="450" allowfullscreen="" class="mapa"></iframe>
         </div>
     </div>
+            <div id="contenedor">
+                <h2>Chat</h2>
+                <div id="caja-chat">
+                    <table>
+                        <tbody id="chat-msg">
+
+                        </tbody>
+                    </table>
+                </div>
+    
+                <div>
+                    <input type="text" name="usuario" value="¡Envia un mensaje, <?php echo $usuario; ?> !" disabled>			
+                    <textarea name="mensaje" placeholder="Ingresa tu mensaje" id="msg"></textarea>
+                    <input type="button" name="enviar" value="Enviar" onclick="AgregaMensaje()">
+                </div>
+            </div>
 </main>
+
+    <script type="text/javascript">
+        var tabla = document.querySelector('#chat-msg');
+        var divusuario = document.querySelector('#usuario').innerHTML;
+        var usuario = divusuario.trim();
+
+        function AgregaMensaje()
+        {
+            var d = new Date();
+            if(d.getHours() < 10)
+            {
+                var horas = '0' + d.getHours();
+            }
+            var hora = horas + ':' + d.getMinutes();
+            if(d.getHours() < 12)
+            {
+                var hora = hora + ' am';
+            }
+            else{
+                var hora = hora + ' pm';
+            }
+            var mensaje = document.querySelector('#msg');
+            tabla.innerHTML += '<tr><td>' + hora + ' - ' + usuario + ': ' + mensaje.value + '</td></tr>';
+        }
+
+    </script>
 
 <?php
 include('footer.php');
