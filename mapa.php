@@ -36,8 +36,8 @@
         <div class="dropdown">
             <button class="dropbtn">Rutas Disponibles</button>
             <div class="dropdown-content" style="display:block">
-                <a href="#">Ruta 27</a>
-                <a href="#">Ruta 9</a>
+                <a onclick="ActualizaChat27()">Ruta 27</a>
+                <a onclick="ActualizaChat9()">Ruta 9</a>
             </div>
         </div>
         <div class="mapadiv">
